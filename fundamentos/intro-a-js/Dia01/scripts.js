@@ -1,10 +1,7 @@
-let myName = "Gustavo";
-const birthCity = "Araraquara";
-let birthYear = 2001;
-console.log(myName, birthCity, birthYear);
+const base = 5;
+const heigth = 8;
+const area = base * heigth;
+console.log("area do retangulo é", area)
 
-birthYear = 2030;
-console.log(birthYear);
-
-// birthCity = "São Paulo";
-console.log(birthCity)
+const perimeter = base + heigth + base + heigth
+console.log("O perimetro do retangulo é", perimeter)
