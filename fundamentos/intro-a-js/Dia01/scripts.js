@@ -1,7 +1,13 @@
-const base = 5;
-const heigth = 8;
-const area = base * heigth;
-console.log("area do retangulo é", area)
+const nota = 75;
 
-const perimeter = base + heigth + base + heigth
-console.log("O perimetro do retangulo é", perimeter)
+if (nota >= 80){
+    console.log("Parabens, voce foi aprovado!")
+}
+
+else if (nota >= 60 && nota < 80){
+    console.log("Voces esta na lista de espera")
+}
+
+else {
+    console.log("Voce foi reprovado")
+}
