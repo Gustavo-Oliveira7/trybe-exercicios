@@ -1,25 +1,42 @@
-// function hello(nome) {
-//     return `Olá, ${nome}!`
-// }
-// let nome = 'Ivan';
-// console.log(hello(nome));
+//🚀 Crie uma função que ligue e desligue um motor de um carro.
+// 🚀Crie uma variável para armazenar o valor de status do seu motor (lembre-se de armazenar o tipo de variável da forma correta);
+// 🚀Crie a função ligarDesligar utilizando arrow functions. Ela não receberá nenhum parâmetro;
+// 🚀Crie a lógica para ligar e desligar o motor (a lógica deverá utilizar uma condicional para ligar e desligar o motor);
+// 🚀Imprima no terminal “O motor está ligado“ e “O motor está desligado“ (lembre-se de utilizar o template literals nesse momento).
+// 🚀Bônus (opcional): tente fazer o mesmo exercício utilizando ternary operator.
 
-// 🚀 Transforme a função hello em uma arrow function;
+    // let status = 'desligado';
 
-    // const hello = (nome) => `Olá, ${nome}`
-    // let nome = 'Ivan';
-    // console.log(hello(nome));
+    // const ligarDesligar = () => (status === 'desligado' ? status = 'ligado' : status = 'desligado')
+    // console.log(`O motor está ${ligarDesligar()}`); 
+    // console.log(`O motor está ${ligarDesligar()}`); 
+    // console.log(`O motor está ${ligarDesligar()}`); 
 
-// 🚀 Transforme a função nomeCompleto em uma arrow function;
+// 🚀 Crie uma função que calcule a área de um círculo.
+// 🚀Na matemática, a fórmula para calcular a área de um círculo é: área = PI vezes o raio elevado ao quadrado.
+// 🚀Com base nessa informação:
+// 🚀Crie a função circleArea, que recebe o valor do raio como parâmetro, utilizando arrow functions;
+// 🚀Crie uma variável para armazenar o valor de PI (lembre-se de armazenar o tipo de variável da forma correta);
+// 🚀Crie a lógica para retornar a área do círculo;
+// 🚀Imprima no terminal “Essa é a área do círculo: resultado da função“ (lembre-se de utilizar o template literals nesse momento).
 
-    // const nomeCompleto = (nome, sobrenome) =>`${nome} ${sobrenome}`
-    // let nome = 'Ivan';
-    // let sobrenome = 'Pires';
-    // console.log(nomeCompleto(nome, sobrenome));
+    // const pi = 3.14
+    // const circleArea = (raio) => pi * (raio) ** 2
+    // console.log(`Éssa é a area do círculo: ${circleArea(5)}`);
 
-// 🚀 Altere a expressão if/else utilizando ternary operator;
+// 🚀 Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
+// let frase = 'Antônio foi no banheiro e não sabemos o que aconteceu'
 
-let speed = 1000;
-const speedCar = (speed >= 120) ? `Você ultrapassou o limite de velocidade`:
-`Você está na velocidade permitida`;
-console.log(speedCar);
+// const longestWord = (frase) => {for(let word of frase.split(' ')) (word.length > maior.length) ? maior = word : maior = maior}
+
+// console.log(longestWord(frase));
+let maior = ''
+function longestWord(frase) {
+    for(let word of frase.split(' ')) 
+        if (word.length > maior.length){
+            maior = word
+        }
+    console.log(maior);
+}
+        
+longestWord('Antônio foi no banheiro e não sabemos o que aconteceu');
