@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="name">Nome: </label>
+        <input type="text" id="name" minlength="10" maxlength="40" name = 'user' required placeholder="Digite seu nome">
+        
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="e-mails" minlength="10" maxlength="50" required placeholder="Digite seu e-mail">
+
+        <br>
+        <br>
+            <input type="radio" name="local" id="local1"> 
+            <label for="local1">Estados Unidos</label>
+            
+            <input type="radio" name="local" id="local2"> 
+            <label for="local2">Peru</label>
+            
+            <input type="radio" name="local" id="local3">
+            <label for="local3">Alemanha</label>
+                
+            <input type="radio" name="local" id="local4"> 
+            <label for="local4">China</label>
+
+        <h2>Espaço para digitar a resposta:</h2>
+        <textarea name="resposta" id="textarea" cols="30" rows="10" placeholder="Digite aqui a sua resposta" required></textarea>
+        
+        <br>
+        <br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+                
+        <br>
+        <br>
+        <label for="checkbox1">
+            Concordo 1 <input type="checkbox" name="concorda1" id="checkbox1" required>  
+        </label>       
+        <br>
+        <label for="checkbox2">
+            Concordo 2  <input type="checkbox" name="concorda2" id="checkbox2" required> 
+        </label>
+        
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
