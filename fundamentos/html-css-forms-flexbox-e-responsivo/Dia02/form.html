@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-TrybeTrip</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="subtitle is-3 container text-center">Concorra à Viagem dos seus sonhos com a GuAirLines</h1>
+
+    <form class="column is-half is-offset-one-quarter">
+      <fieldset >
+        <div class="row mb-3 " >
+            <div class="col-sm-10">
+                <label for="fullName"  class="form-label ">Nome Completo:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40" minlength="10" class = "form-control" required>      
+                <br/>
+            </div>
+
+            <div class="col-sm-10">
+                <label for="email" class="form-label">Endereço de e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50" minlength="10" class="form-control" required>
+                <br/>
+            </div> 
+        </div> 
+
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Seu destino!</legend>
+            <div class="col-sm-10">
+                <div class="form-check"> 
+                    <label for="destination1">Cidade</label>
+                    <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required class="form-check-input">
+                </div>
+
+                <div class="form-check">
+                    <label for="destination2">Campo</label>
+                    <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required class="form-check-input">
+                </div>
+
+                <div class="form-check">
+                    <label for="destination3">Praia</label>
+                    <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required class="form-check-input">
+                </div>
+
+                <div class="form-check">
+                    <label for="destination4">Montanhas</label>
+                    <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required class="form-check-input">
+                </div>
+            </div>
+            <br/>
+            <br>
+        </fieldset>
+        <br>
+        <div class="">
+            <div class="control">
+            <label for="why">Por que você deveria ser a pessoa escolhida pelo concurso GuAirLines?</label>
+            <br>
+            <textarea class="textarea is-focused " name="why" id="why" cols="50" rows="5" placeholder="Digite sua resposta vencedora aqui" required></textarea>
+            </div>
+        </div>
+
+
+        <br/>
+
+        <label for="date">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" id="date" required>
+        <br/>
+        <br>
+        <br>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Gostaria de receber outras incríveis oportunidades oferecidas pela GuAirLines.</label>
+        </div>
+        <br/>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked required>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
+        <br>
+      </fieldset>
+
+      <div class="col-12 field is-grouped is-grouped-centered">
+        <button type="submit" id="submit-btn"  class="button is-success is-rounded" >Participar do concurso GuAirLines</button>
+        <button type="reset" id="clear-btn" class="button is-danger is-rounded">Apagar informações</button>
+      <div>
+
+    </form>
+  </body>
+</html>
